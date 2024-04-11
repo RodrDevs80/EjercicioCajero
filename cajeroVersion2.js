@@ -26,7 +26,9 @@ function informarAlCliente(DineroARetirar, saldoFinal, saldoInicial, nombreUsuar
 //combino las funciones para obtener un resultado-llamo a las funciones
 //valido la entrada de datos
 const dineroARetirarValidado = validarEntrada(dineroARetirar);
+//realizo la operación
 const saldoFinal = calcularRetiro(dineroARetirarValidado, saldoInicial);
+//informo un resultado
 informarAlCliente(dineroARetirarValidado, saldoFinal, saldoInicial, nombreUsuario,);
 
 
