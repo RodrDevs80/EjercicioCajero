@@ -1,11 +1,11 @@
-/**Realizar lo mismo pero con funciones */
+
 //variables
 let saldoInicial = 20000;
 const nombreUsuario = prompt('Ingrese su nombre: ');
 const dineroARetirar = prompt('Ingrese un monto a retirar: ');
 //funciones
 function validarEntrada(retiro) {
-    const esValido = !isNaN(retiro) && retiro >= 0;
+    const esValido = !isNaN(retiro) && retiro > 0;
     return esValido ? Number(retiro) : retiro;
 }
 function calcularRetiro(retiro, saldoCuenta) {
@@ -20,7 +20,7 @@ function informarAlCliente(DineroARetirar, saldoFinal, saldoInicial, nombreUsuar
             alert(`${nombreUsuario}, retiraste $${DineroARetirar}, tenes disponible $${saldoFinal}`);
         }
     } else {
-        alert(`El dato ingresado: ${DineroARetirar},no es valido! La cantidad que desea retirar debe ser un numero positivo`);
+        alert(`El dato ingresado: ${DineroARetirar},no es valido! La cantidad que desea retirar debe ser un numero positivo mayor a cero`);
     }
 }
 //combino las funciones para obtener un resultado-llamo a las funciones
