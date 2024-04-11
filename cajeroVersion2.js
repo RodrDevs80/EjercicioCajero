@@ -14,7 +14,7 @@ function calcularRetiro(retiro, saldoCuenta) {
 }
 function informarAlCliente(DineroARetirar, saldoFinal, saldoInicial, nombreUsuario) {
     if (typeof DineroARetirar == 'number') {
-        if (saldoFinal < 0 || saldoFinal == saldoInicial) {
+        if (saldoFinal < 0) {
             alert(`El monto de su cuenta es insuficiente,usted tiene $${saldoInicial} e intenta retirar ${DineroARetirar}, ${nombreUsuario}: intenta un monto valido!`);
         } else {
             alert(`${nombreUsuario}, retiraste $${DineroARetirar}, tenes disponible $${saldoFinal}`);
